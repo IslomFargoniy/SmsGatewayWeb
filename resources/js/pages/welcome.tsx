@@ -190,7 +190,7 @@ export default function Welcome() {
                                 <ChevronRight className="ml-2 h-5 w-5" />
                             </Link>
                             <a
-                                href="https://github.com/IslamAbdurahman"
+                                href="https://github.com/IslomFargoniy"
                                 target="_blank"
                                 className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-gray-700 bg-white border border-gray-200 rounded-xl hover:bg-gray-50 transition-all dark:bg-gray-900 dark:border-gray-800 dark:text-gray-300 dark:hover:bg-gray-800"
                             >
@@ -276,7 +276,7 @@ export default function Welcome() {
                             <div className="flex gap-8 text-sm text-gray-500 dark:text-gray-400">
                                 <a href="#" className="hover:text-indigo-600 transition-colors">{t('Privacy Policy')}</a>
                                 <a href="#" className="hover:text-indigo-600 transition-colors">{t('Terms of Service')}</a>
-                                <a href="https://github.com/IslamAbdurahman" target="_blank" className="hover:text-indigo-600 transition-colors">{t('GitHub')}</a>
+                                <a href="https://github.com/IslomFargoniy" target="_blank" className="hover:text-indigo-600 transition-colors">{t('GitHub')}</a>
                             </div>
 
                             <div className="text-sm text-gray-400">

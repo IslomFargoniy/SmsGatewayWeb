@@ -49,7 +49,7 @@ export function AppSidebar() {
     const footerNavItems: NavItem[] = [
         {
             title: t('GitHub'),
-            url: 'https://github.com/IslamAbdurahman',
+            url: 'https://github.com/IslomFargoniy',
             icon: Github,
         },
     ];

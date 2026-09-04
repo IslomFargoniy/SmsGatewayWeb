@@ -26,7 +26,7 @@ const mainNavItems: NavItem[] = [
 const rightNavItems: NavItem[] = [
     {
         title: 'GitHub',
-        url: 'https://github.com/IslamAbdurahman',
+        url: 'https://github.com/IslomFargoniy',
         icon: Github,
     },
 ];

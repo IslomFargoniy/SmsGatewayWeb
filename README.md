@@ -32,7 +32,7 @@ Follow these steps to set up the project locally:
 
 ### 2. Clone the Repository
 ```bash
-git clone git@github.com:IslamAbdurahman/SmsGatewayWeb.git
+git clone git@github.com:IslomFargoniy/SmsGatewayWeb.git
 cd SmsGatewayWeb
 ```
 
@@ -131,7 +131,7 @@ If you are moving the project to a new domain or server, follow these steps:
 
 Built with ❤️ by **Islam Abdurahman**.
 
-- **GitHub:** [@IslamAbdurahman](https://github.com/IslamAbdurahman)
+- **GitHub:** [@IslomFargoniy](https://github.com/IslomFargoniy)
 
 ## 📄 License
 
