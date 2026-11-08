@@ -129,7 +129,7 @@ If you are moving the project to a new domain or server, follow these steps:
 
 ## 👨‍💻 Developer
 
-Built with ❤️ by **Islam Abdurahman**.
+Built with ❤️ by **Islombek Abduraxmonov**.
 
 - **GitHub:** [@IslomFargoniy](https://github.com/IslomFargoniy)
 
