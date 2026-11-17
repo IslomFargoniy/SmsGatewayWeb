@@ -3,7 +3,7 @@ import AppLayout from '@/layouts/app-layout';
 import SettingsLayout from '@/layouts/settings/layout';
 import { type BreadcrumbItem } from '@/types';
 import { Transition } from '@headlessui/react';
-import { Head, useForm } from '@inertiajs/react';
+import { Head, useForm, usePage } from '@inertiajs/react';
 import { FormEventHandler, useRef } from 'react';
 
 import HeadingSmall from '@/components/heading-small';
@@ -12,10 +12,10 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { useTranslate } from '@/hooks/use-translate';
 
-
-
 export default function Password() {
     const { t } = useTranslate();
+    // Signed up with Google: there is no current password to ask for.
+    const { hasPassword = true } = usePage<{ hasPassword?: boolean }>().props;
     const breadcrumbs: BreadcrumbItem[] = [
         {
             title: t('Password settings'),
@@ -57,25 +57,34 @@ export default function Password() {
 
             <SettingsLayout>
                 <div className="space-y-6">
-                    <HeadingSmall title={t('Update Password')} description={t('Ensure your account is using a long, random password to stay secure.')} />
+                    <HeadingSmall
+                        title={hasPassword ? t('Update Password') : t('Set a password')}
+                        description={
+                            hasPassword
+                                ? t('Ensure your account is using a long, random password to stay secure.')
+                                : t('You signed in with Google. Set a password to also sign in with your email.')
+                        }
+                    />
 
                     <form onSubmit={updatePassword} className="space-y-6">
-                        <div className="grid gap-2">
-                            <Label htmlFor="current_password">{t('Current Password')}</Label>
+                        {hasPassword && (
+                            <div className="grid gap-2">
+                                <Label htmlFor="current_password">{t('Current Password')}</Label>
 
-                            <Input
-                                id="current_password"
-                                ref={currentPasswordInput}
-                                value={data.current_password}
-                                onChange={(e) => setData('current_password', e.target.value)}
-                                type="password"
-                                className="mt-1 block w-full"
-                                autoComplete="current-password"
-                                placeholder={t('Current Password')}
-                            />
+                                <Input
+                                    id="current_password"
+                                    ref={currentPasswordInput}
+                                    value={data.current_password}
+                                    onChange={(e) => setData('current_password', e.target.value)}
+                                    type="password"
+                                    className="mt-1 block w-full"
+                                    autoComplete="current-password"
+                                    placeholder={t('Current Password')}
+                                />
 
-                            <InputError message={errors.current_password} />
-                        </div>
+                                <InputError message={errors.current_password} />
+                            </div>
+                        )}
 
                         <div className="grid gap-2">
                             <Label htmlFor="password">{t('New Password')}</Label>

@@ -230,5 +230,7 @@
     "Please wait while we process your file. This may take a few moments.": "Пожалуйста, подождите, пока мы обрабатываем ваш файл. Это может занять несколько минут.",
     "Background Import Completed!": "Загрузка в фоновом режиме завершена!",
     "Import Failed": "Ошибка загрузки",
-    "An unknown error occurred during import.": "Во время загрузки произошла неизвестная ошибка."
+    "An unknown error occurred during import.": "Во время загрузки произошла неизвестная ошибка.",
+    "Set a password": "Установить пароль",
+    "You signed in with Google. Set a password to also sign in with your email.": "Вы вошли через Google. Установите пароль, чтобы входить и по email."
 }

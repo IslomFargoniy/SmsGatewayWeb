@@ -230,5 +230,7 @@
     "Please wait while we process your file. This may take a few moments.": "Faylingiz qayta ishlanayotgan paytda kuting. Bu bir necha daqiqa vaqt olishi mumkin.",
     "Background Import Completed!": "Orqa fonda yuklash yakunlandi!",
     "Import Failed": "Yuklashda xatolik",
-    "An unknown error occurred during import.": "Yuklash paytida nomaʼlum xatolik yuz berdi."
+    "An unknown error occurred during import.": "Yuklash paytida nomaʼlum xatolik yuz berdi.",
+    "Set a password": "Parol o'rnatish",
+    "You signed in with Google. Set a password to also sign in with your email.": "Siz Google orqali kirgansiz. Email orqali ham kirish uchun parol o'rnating."
 }

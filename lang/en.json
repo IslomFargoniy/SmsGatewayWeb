@@ -230,5 +230,7 @@
     "Please wait while we process your file. This may take a few moments.": "Please wait while we process your file. This may take a few moments.",
     "Background Import Completed!": "Background Import Completed!",
     "Import Failed": "Import Failed",
-    "An unknown error occurred during import.": "An unknown error occurred during import."
+    "An unknown error occurred during import.": "An unknown error occurred during import.",
+    "Set a password": "Set a password",
+    "You signed in with Google. Set a password to also sign in with your email.": "You signed in with Google. Set a password to also sign in with your email."
 }

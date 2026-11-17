@@ -44,14 +44,17 @@ class SocialiteController extends Controller
                 \Log::info('Existing user updated');
             } else {
                 \Log::info('Creating new user');
-                $user = User::create([
+                $user = new User;
+                $user->forceFill([
                     'name' => $googleUser->name,
                     'email' => $googleUser->email,
                     'google_id' => $googleUser->id,
                     'avatar' => $googleUser->avatar,
                     'google_token' => $googleUser->token,
                     'password' => Hash::make(Str::random(24)),
-                ]);
+                    // Nobody knows the random password: Settings → Password sets one without asking for it.
+                    'password_set_at' => null,
+                ])->save();
                 \Log::info('New user created: ' . $user->id);
             }
 
